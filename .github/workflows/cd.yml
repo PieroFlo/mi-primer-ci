@@ -36,6 +36,6 @@ jobs:
         python deploy.py STAGING
     
     - name: Deploy to Production
-      if: github.ref == 'refs/heads/main'
+      if: github.ref == 'refs/heads/main
       run: |
         python deploy.py PRODUCCION
